@@ -93,7 +93,9 @@ export default function SignIn({navigation}) {
       </View>
 
       <View style={{alignItems: 'center', marginTop: 200}}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity  onPress={() => {
+              navigation.navigate('CreateProfile');
+            }}style={styles.button}>
           <Text style={styles.signin}>Sign In</Text>
         </TouchableOpacity>
 

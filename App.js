@@ -17,7 +17,8 @@ import ForgetPassword from './screens/ForgetPassword';
 import Verification from './screens/Verification';
 import ResetPassword from './screens/ResetPassword';
 import SignUp from './screens/SignUp';
-
+import CreateProfile from './screens/CreateProfile';
+import PaymentMethod from './screens/PaymentMethod';
 LogBox.ignoreLogs(['Warning: ...']);
 //Ignore all log notifications
 LogBox.ignoreAllLogs();
@@ -57,6 +58,17 @@ const App = () => {
         <Stack.Screen
           name="SignUp"
           component={SignUp}
+          options={{headerShown: false}}
+        />
+         <Stack.Screen
+          name="CreateProfile"
+          component={CreateProfile}
+          options={{headerShown: false}}
+        />
+
+         <Stack.Screen
+          name="PaymentMethod"
+          component={PaymentMethod}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
