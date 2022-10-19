@@ -80,12 +80,14 @@ export default function SignUp({navigation}) {
         </View>
       </View>
       <View style={{alignItems: 'center', marginTop: 240}}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity  onPress={() => {
+              navigation.navigate('CreateProfile');
+            }} style={styles.button}>
           <Text style={styles.signup}>Sign Up</Text>
         </TouchableOpacity>
 
         <View style={styles.bottomView}>
-          <Text>Don't have an account?</Text>
+          <Text>Already have an account?</Text>
           <TouchableOpacity
             onPress={() => {
               navigation.navigate('SignIn');

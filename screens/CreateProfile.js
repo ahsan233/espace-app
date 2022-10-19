@@ -137,7 +137,7 @@ export default function CreateProfile({navigation}) {
       </View>
       <View style={{alignItems: 'center', marginTop: 200}}>
         <TouchableOpacity  onPress={() => {
-              navigation.navigate('PaymentMethod');
+              navigation.navigate("SubscriptionPlans");
             }}style={styles.button}>
           <Text style={styles.next}>Next</Text>
         </TouchableOpacity>
