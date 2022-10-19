@@ -55,7 +55,7 @@ export default function PaymentMethod({navigation}) {
     <View style={styles.backView}>
       <TouchableOpacity
         onPress={() => {
-          navigation.navigate('CreateProfile');
+          navigation.navigate('SubscriptionPlans');
         }}>
         <Image
           style={styles.back}
@@ -70,8 +70,8 @@ export default function PaymentMethod({navigation}) {
 
   <View style={styles.form}>
     <View style={styles.heading}>
-     <Text style={styles.paynow}>Pay now and use unlimited</Text>
-     <Text style={styles.features}>features</Text>
+     {/* <Text style={styles.paynow}>Pay now and use unlimited</Text> */}
+     <Text style={styles.features}>Monthly plan</Text>
      <Text style={styles.month}>99$/month</Text>
      <View style={styles.description}>
      <Text style={styles.paragraph}>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -133,7 +133,7 @@ export default function PaymentMethod({navigation}) {
         </View>
 
      </View>
-     <View style={{alignItems: 'center', marginTop:hp('3%')}}>
+     <View style={{alignItems: 'center', marginTop:hp('5%')}}>
         <TouchableOpacity  onPress={
               onPressHandler
             }style={styles.button}>
@@ -215,12 +215,13 @@ paid:{
   fontSize: hp('1.8%'),
   marginTop:hp('1.5%')
 
+
 },
 features:{
   color: '#00C8BC',
         fontFamily: 'Rubik-Medium',
-        fontSize: hp('2.5%'),
-        marginTop:hp('0.5%')
+        fontSize: hp('2.3%'),
+        marginTop:hp('3%')
 },
 month:{
   color: '#808080',
@@ -247,7 +248,7 @@ TextInput: {
   borderWidth: 1,
   flexDirection: 'row',
   alignItems: 'center',
-  marginTop: hp('2.9%'),
+  marginTop: hp('3.2%'),
 },
 TextInput1: {
   width: wp('35%'), // 80% of width device screen}
